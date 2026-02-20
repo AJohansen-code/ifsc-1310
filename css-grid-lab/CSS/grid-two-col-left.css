@@ -1,0 +1,61 @@
+/* Box Sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 40px;
+  background-color: #fff;
+  color: #444;
+}
+
+/* The Grid Container */
+main {
+  display: grid;
+  grid-gap: 10px;
+  /* Defining 4 columns of 100px each with the name [col] */
+  grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px;
+  /* Defining rows with the name [row] */
+  grid-template-rows: [row] auto [row] auto [row] auto;
+  max-width: fit-content; /* Keeps it tight to the 400px width */
+  margin: 20px auto;
+}
+
+/* Individual Grid Items */
+main > * {
+  font-family: Avenir, Montserrat, sans-serif;
+  background-color: #c0c0c0; /* Keeping your gray, or use #444 for the dark look */
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Mapping your HTML to the Grid Logic */
+
+.primary.header { /* Box A */
+  grid-column: col / span 2;
+  grid-row: row;
+}
+
+#content { /* Box B */
+  grid-column: col 3 / span 2;
+  grid-row: row;
+}
+
+#blog { /* Box C */
+  grid-column: col;
+  grid-row: row 2;
+}
+
+aside { /* Box D */
+  grid-column: col 2 / span 3;
+  grid-row: row 2;
+}
+
+.primary.footer { /* Box E */
+  grid-column: col / span 4;
+  grid-row: row 3;
+}
