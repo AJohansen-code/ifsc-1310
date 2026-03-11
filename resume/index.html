@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alicia Johansen | Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="container" id="top">
+  <nav class="primary">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+  </nav>
+</header>>
+
+<!-- Main -->
+<main itemscope itemtype="https://schema.org/Person" class="container">
+  <h1 class="page-title" itemprop="name">Resume</h1>
+
+  <section id="about">
+    <h2 class="visuallyhidden">Personal Details</h2>
+
+    <div class="bio">
+      <img itemprop="image" src="profile-pic.JPG" alt="Your Name">
+      <p itemprop="description">
+        Dedicated Help Desk Technician and current student at the University of Arkansas at Little Rock with a strong foundation in technical support and problem-solving.
+        Proven track record of providing efficient IT solutions within the energy sector at Arkansas Electric Cooperative. Deeply committed to leveraging technical expertise to support non-profit 
+        initiatives focused on environmental sustainability and community empowerment.
+      </p>
+    </div>
+
+    <dl class="details">
+      <dt>Name</dt>
+      <dd itemprop="name">
+        <span itemprop="givenName">Alicia</span> <span itemprop="familyName">Johansen</span>
+      </dd>
+
+      <dt>Date of birth</dt>
+      <dd><time itemprop="birthDate" datetime="2000-10-12">09/17/1996</time></dd>
+
+      <dt>Nationality</dt>
+      <dd itemprop="nationality">United States</dd>
+
+      <dt>Location</dt>
+      <!-- Keep original text, but model as Place for better schema correctness -->
+      <dd itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+        <span itemprop="name">Arkansas</span>
+      </dd>
+
+      <dt>Telephone</dt>
+      <dd>
+        <!-- tel: should be digits; keep visible text as-is -->
+        <a itemprop="telephone" href="tel:5555555555">855.459.1234</a>
+      </dd>
+
+      <dt>Email</dt>
+      <dd>
+        <a itemprop="email" href="mailto:email@mail.com">aracosta@ualr.com</a>
+      </dd>
+
+      <dt>Address</dt>
+      <dd itemprop="address" itemscope itemtype="https://www.google.com/maps/place/Ka%E2%80%98Ula+Island+Seabird+Sanctuary/@21.6495695,-160.5818275,13z/data=!4m15!1m8!3m7!1s0x7bffdb064f79e005:0x4b7782d274cc8628!2sHawaii!3b1!8m2!3d19.8986819!4d-155.6658568!16zL20vMDNnaDQ!3m5!1s0x7c080f478a404b3b:0x1222a764ca9494c5!8m2!3d21.6535736!4d-160.5422796!16s%2Fg%2F11p65d83n6?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D">
+        <span itemprop="streetAddress">2801 South University</span>
+        <span itemprop="addressLocality">Little Rock</span>
+        <span itemprop="postalCode">72204</span>
+        <span itemprop="addressCountry">USA</span>
+      </dd>
+    </dl>
+
+    <ul class="related-links">
+      <li><a itemprop="sameAs" rel="me" href="https://github.com/AJohansen-code"> Github</a></li>
+      <li><a itemprop="sameAs" rel="me" href="https://www.linkedin.com/in/alicia-johansen-681862207/">Linkedin</a></li>
+      <li><a itemprop="url" href="Alicia J. Resume 2024.pdf" download>pdf resume</a></li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li class="skill" itemprop="knowsAbout">HTML</li>
+      <li class="skill" itemprop="knowsAbout">Python</li>
+      <li class="skill" itemprop="knowsAbout">Java</li>
+      <li class="skill" itemprop="knowsAbout">CSS</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <!-- current job -->
+    <article class="job">
+      <!-- jobTitle is valid on Person; this is still within Person scope -->
+      <h3 itemprop="jobTitle">Helpdesk Technician</h3>
+
+      <!-- worksFor is valid on Person -->
+      <div itemprop="worksFor" itemscope itemtype="https://www.aecc.com">
+        <span itemprop="name">Arkansas Electric Cooperative</span>
+        <span>March 2024 - Present</span>
+
+        <p itemprop="description">We provide first-level technical support, troubleshooting hardware, software, and network issues via phone, email, or in-person. 
+          We also diagnose problems, guide users through solutions, document interactions in ticketing systems (e.g., Jira, ServiceNow), and escalate complex issues to higher-level support. 
+          Key skills include, but are not limited to, patience, communication, and technical proficiency.</p>
+
+        <span itemprop="location" itemscope itemtype="https://www.google.com/maps/place/Electric+Cooperatives+of+Arkansas/@34.67756,-92.3248851,17z/data=!3m1!4b1!4m6!3m5!1s0x87d2a5684f6af35b:0xfcaa49228aba028!8m2!3d34.6775556!4d-92.3223102!16s%2Fg%2F1td2vfhm?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D">
+          <a itemprop="url" href="https://www.aecc.com/">Electric Cooperatives of Arkansas</a>
+          <span itemprop="address" itemscope itemtype="https://www.google.com/maps/place/Electric+Cooperatives+of+Arkansas/@34.67756,-92.3248851,17z/data=!3m1!4b1!4m6!3m5!1s0x87d2a5684f6af35b:0xfcaa49228aba028!8m2!3d34.6775556!4d-92.3223102!16s%2Fg%2F1td2vfhm?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D">
+            <span itemprop="addressLocality">1 Cooperative Way, Little Rock, AR 72209</span>
+          </span>
+        </span>
+      </div>
+    </article>
+
+    <!-- Previous Jobs -->
+    <article class="job">
+      <h3 itemprop="jobTitle">Game Technician</h3>
+
+      <span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
+        <span itemprop="name">Dave & Buster</span>
+
+        <span itemprop="location" itemscope itemtype="https://schema.org/Place">
+          <a itemprop="url" href="https://www.daveandbusters.com/">Dave & Buster Website</a>
+          <span itemprop="address" itemscope itemtype="https://www.google.com/maps/place/Dave+%26+Buster's+Little+Rock/@34.6636989,-92.4114502,16z/data=!3m1!4b1!4m6!3m5!1s0x87d2a89c91f1f015:0x5f7c6f7bc87e07e6!8m2!3d34.6636946!4d-92.4065793!16s%2Fg%2F11cmjykbfz?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D">
+            <span itemprop="addressLocality">1001 W. 12th St, Little Rock, AR 72201</span>
+          </span>
+        </span>
+      </span>
+
+      <!-- Keep original visible date format; Google won't bind it perfectly, but it won't warn -->
+      <div>
+        <span>February 2017</span> -
+        <span>February 2020</span>
+      </div>
+
+      <p itemprop="description"> Tasks included installing, maintaing, and reparing amusement equipment like arcade machines, pinball, and slot machines to ensure optimal performance. 
+        We diagnose mechanical/electronic issues, replace components, perform preventative maintenance, and provide customer service. 
+        Requirements often include a high school diploma, troubleshooting skills, and physical stamina.</p>
+    </article>
+
+    <article class="job">
+      <h3 itemprop="jobTitle">Game Tester</h3>
+
+      <span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
+        <span itemprop="name">Naughty Dog</span>
+
+        <span itemprop="location" itemscope itemtype="https://schema.org/Place">
+          <a itemprop="url" href="https://www.naughtydog.com/">Naughty Dog Website</a>
+          <span itemprop="address" itemscope itemtype="https://www.google.com/maps/place/Naughty+Dog+LLC/@34.0281439,-118.4737793,16z/data=!3m2!4b1!5s0x80c2bb17e723c4e5:0xb847d5b835e236df!4m6!3m5!1s0x80c2bb39055993f7:0xbc891fc1b60f587a!8m2!3d34.0281395!4d-118.4712044!16s%2Fg%2F1tdc5h4w?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D">
+            <span itemprop="addressLocality">Santa Monica, CA 90404</span>
+          </span>
+        </span>
+      </span>
+
+      <div>
+        <span>February 2000</span> -
+        <span>February 2005</span>
+      </div>
+
+      <p itemprop="description">My job had me identifies bugs, glitches, and design flaws in video games before release. 
+        We play through games repeatedly, documenting issues, verifying fixes, and ensuring functionality across different platforms to improve user experience. 
+        This role requires high attention to detail, patience, and technical reporting skills.</p>
+    </article>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <article class="certificate" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+      <h3 itemprop="description"><abbr title="Master of Science">BA</abbr> Web Design and Development</h3>
+      <span itemprop="name">University of Little Rock Arkansas</span>
+      <span itemprop="location" itemscope>Little Rock, USA</span>
+      <span>2024-2027</span>
+    </article>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div id="copyright">
+    &copy; 2026 Johansen | <a href="#top">Top</a>
+  </div>
+</footer>
+ 

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Demo - Two Column Left</title>
+  <style>
+    /* --- Box Sizing & Reset --- */
+    html {
+      box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      background-color: #f5efef; 
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* --- Grid Container --- */
+    main {
+      display: grid;
+      max-width: 1000px;
+      margin: 0 auto;
+      gap: 20px;
+      
+     
+      grid-template-columns: 1fr 3fr;
+
+      /* Map the layout visually */
+      grid-template-areas: 
+        "header  header"
+        "sidebar aside"
+        "sidebar content"
+        "sidebar blog"
+        "footer  footer";
+    }
+
+
+    main > * {
+      font-family: Avenir, Montserrat, Corbel, "URW Gothic", sans-serif;
+      background-color: #c0c0c0;
+      border-radius: 10px;
+      padding: 25px;
+    }
+
+
+    .primary-header { 
+      grid-area: header; 
+    }
+
+    #content { 
+      grid-area: content; 
+    }
+
+    #blog { 
+      grid-area: blog; 
+    }
+
+    aside { 
+      grid-area: sidebar; 
+    }
+
+    .primary-footer { 
+      grid-area: footer; 
+    }
+
+  
+    h1, h2 {
+      margin-top: 0;
+      font-weight: bold;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    footer {
+      font-weight: 500;
+    }
+
+  
+    @media (max-width: 600px) {
+      main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+          "header"
+          "sidebar"
+          "content"
+          "blog"
+          "footer";
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <header class="primary-header">
+      <h1>Site Header</h1>
+    </header>
+
+    <aside>
+      <h2>Aside</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia non eaque dolorum sequi velit molestiae ratione ducimus ipsum excepturi atque.</p>
+    </aside>
+
+    <section id="content">
+      <header>
+        <h2>#Content Section Header</h2>
+      </header>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus expedita repellendus aliquid iusto consectetur ut velit totam explicabo magnam. Culpa non suscipit doloribus corporis neque.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos inventore quo exercitationem temporibus magni deserunt, quasi repellendus reiciendis? Quos, facere doloribus optio quasi numquam dolore!</p>
+      <footer>Section Footer</footer>
+    </section>
+
+    <section id="blog">
+      <header>
+        <h2>#Blog Section Header</h2>
+      </header>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus expedita repellendus aliquid iusto consectetur ut velit totam explicabo magnam. Culpa non suscipit doloribus corporis neque.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos inventore quo exercitationem temporibus magni deserunt, quasi repellendus reiciendis? Quos, facere doloribus optio quasi numquam dolore!</p>
+      <footer>Section Footer</footer>
+    </section>
+
+    <footer class="primary-footer">
+      Site Footer
+    </footer>
+  </main>
+
+</body>
+</html>
