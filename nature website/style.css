@@ -12,9 +12,17 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
+    padding: 10px 5%;
     background: #2d5a27; /* Dark Forest Green */
     color: white;
+}
+
+.nav-btn {
+    background: white;
+    color: #333 !important;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
 }
 
 nav ul {
@@ -58,27 +66,63 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Info Grid */
+/* Scavenger Banner */
+.scavenger-banner {
+    background-color: #d8e2d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Info Grid Adjustments */
 .info-grid {
+    background-color: var(--off-white);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 50px 5%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px 10%;
 }
 
 .card {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    text-align: center;
-    border-top: 5px solid #2d5a27;
+    background: #e0e0e0; /* Gray boxes from prototype */
+    padding: 0;
+    overflow: hidden;
+    border-top: none;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: white;
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 15px;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+/* Footer Layout */
+.main-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px 10%;
+    background: white;
+    color: #333;
+    text-align: left;
+    border-top: 1px solid #ddd;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    color: #666;
 }
