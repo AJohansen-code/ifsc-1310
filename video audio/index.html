@@ -7,27 +7,37 @@
     <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
     
     <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/code.videojs.com/videojs-youtube/3.0.1/Youtube.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/3.0.1/Youtube.min.js"></script>
 </head>
 <body>
 
-    <h2>Assignment: Video Implementation</h2>
-    
-    <video
-      id="vid1"
-      class="video-js vjs-default-skin vjs-big-play-centered"
-      controls
-      width="640" height="360"
-      data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=XCsppc963NI"}] }'>
-    </video>
+    <h1>Mobile Web Assignment</h1>
+
+    <section>
+        <h2>Video.js with YouTube</h2>
+        <p>This implementation uses the Video.js prebuilt player to stream a YouTube source.</p>
+        
+        <video
+          id="my-video-player"
+          class="video-js vjs-default-skin vjs-big-play-centered"
+          controls
+          width="640" 
+          height="360"
+          data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=XCsppc963NI"}] }'>
+        </video>
+    </section>
 
     <hr>
 
-    <h2>Assignment: Audio Implementation</h2>
-    <audio controls>
-        <source src="your-audio-file.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <section>
+        <h2>Native HTML5 Audio</h2>
+        <p>Using the native browser controls for audio playback.</p>
+        <audio controls>
+            <source src="your-audio-file.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
 
 </body>
 </html>
