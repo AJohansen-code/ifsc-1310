@@ -43,7 +43,7 @@ nav ul li a {
 /* Hero Section */
 .hero {
     background: #4a7c44; /* Leaf Green */
-    background-image: url('homepage nature.jpeg');
+    background-image: url('images/homepage/nature.jpeg');
     background-size: cover;
     background-position: center;
     color: white;
