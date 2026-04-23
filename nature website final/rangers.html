@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment with Rangers</title>
+</head>
+<body>
+
+    <main class="appointment-page">
+    <section class="hero-small">
+        <h1>Book a Guided Tour</h1>
+        <p>Connect with our expert rangers for a personalized education session or a guided hike through the Natural State.</p>
+    </section>
+
+    <section class="form-container">
+        <div class="form-header">
+            <h2>Ranger Appointment Request</h2>
+            <p>Please fill out the form below, and a member of our team will contact you within 24 hours.</p>
+        </div>
+
+        <form action="#" method="post" class="appointment-form">
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+            </div>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="tour-type">Service Type</label>
+                    <select id="tour-type" name="tour-type">
+                        <option value="guided-hike">Guided Trail Hike</option>
+                        <option value="safety-edu">Wilderness Safety Education</option>
+                        <option value="wildlife-talk">Wildlife Observation Tour</option>
+                        <option value="school-group">School/Group Presentation</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Preferred Park Location</label>
+                <input type="text" id="location" name="location" placeholder="e.g., Pinnacle Mountain, Petit Jean">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Special Requests or Questions</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your group size or specific interests..."></textarea>
+            </div>
+
+            <button type="submit" class="cta-button">Request Appointment</button>
+        </form>
+    </section>
+</main>
+    
+</body>
+</html>
