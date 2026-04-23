@@ -1,0 +1,82 @@
+body {
+    background-color: #f4f7f4; /* That light sage green */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Animated Gallery Styles */
+.gallery-container {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #f4f7f4;
+}
+
+.animated-gallery {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* Slightly wider for the landmark view */
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* Total duration = number of images * seconds per image (12 * 4s = 48s) */
+    animation: slideSequence 48s infinite; 
+}
+
+/* Staggered start: 4 seconds per image */
+.slide:nth-child(1)  { animation-delay: 0s; }
+.slide:nth-child(2)  { animation-delay: 4s; }
+.slide:nth-child(3)  { animation-delay: 8s; }
+.slide:nth-child(4)  { animation-delay: 12s; }
+.slide:nth-child(5)  { animation-delay: 16s; }
+.slide:nth-child(6)  { animation-delay: 20s; }
+.slide:nth-child(7)  { animation-delay: 24s; }
+.slide:nth-child(8)  { animation-delay: 28s; }
+.slide:nth-child(9)  { animation-delay: 32s; }
+.slide:nth-child(10) { animation-delay: 36s; }
+.slide:nth-child(11) { animation-delay: 40s; }
+.slide:nth-child(12) { animation-delay: 44s; }
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* This adds a slow zoom-in effect while the image is visible */
+    transform: scale(1);
+    animation: zoomEffect 15s infinite; 
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(45, 90, 39, 0.8); /* Using your Dark Forest Green */
+    color: white;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Keyframes for the sequence */
+@keyframes slideSequence {
+    0%   { opacity: 0; }
+    2%   { opacity: 1; }  /* Fade in quick */
+    8%   { opacity: 1; }  /* Stay visible (roughly 4 seconds) */
+    10%  { opacity: 0; }  /* Fade out */
+    100% { opacity: 0; }
+}
+
+/* Keyframes for the zoom */
+@keyframes zoomEffect {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
