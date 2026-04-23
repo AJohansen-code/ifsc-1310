@@ -1,0 +1,72 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f4;
+}
+/* Appointment Page Styles */
+.form-container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f4f7f4;
+    padding-bottom: 20px;
+}
+
+.form-header h2 {
+    color: #2d5a27;
+    margin: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+input, select, textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #4a7c44;
+    box-shadow: 0 0 5px rgba(74, 124, 68, 0.2);
+}
+
+/* Make the CTA button span full width in the form */
+.appointment-form .cta-button {
+    width: 100%;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.appointment-form .cta-button:hover {
+    background: #d4ac0d;
+}
