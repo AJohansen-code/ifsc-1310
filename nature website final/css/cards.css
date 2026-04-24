@@ -39,6 +39,62 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* About Page - Mission Story */
+.about-container {
+    padding: 80px 10%;
+    background-color: #f4f7f4; /* Using your body background */
+    display: flex;
+    justify-content: center;
+}
+
+.mission-story {
+    max-width: 750px;
+    text-align: center;
+    background: white;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.sub-heading {
+    color: #4a7c44; /* Leaf Green */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.mission-story h1 {
+    font-size: 2.5rem;
+    color: #2d5a27; /* Dark Forest Green */
+    margin: 10px 0 30px;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.story-body h2 {
+    color: #2d5a27;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.story-body p {
+    text-align: left; /* Better for reading longer paragraphs */
+    margin-bottom: 20px;
+}
+
+.about-cta {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
 /* Guide Page Specifics */
 .guide-content {
     max-width: 800px; /* Limits width for better readability */
@@ -85,4 +141,5 @@ nav ul li a {
     font-size: 0.85rem;
     margin-bottom: 8px;
     color: #666;
-}
+}   
+
