@@ -22,7 +22,7 @@ nav {
     text-decoration: none;
     display: flex; /* Ensures image and any potential text align */
     align-items: center;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 /* Sizing the logo image */
@@ -40,9 +40,10 @@ nav {
 }
 
 nav ul {
-    list-style: none;
     display: flex;
+    list-style: none;
     margin: 0;
+    margin-left: auto;
     padding: 0;
 }
 
