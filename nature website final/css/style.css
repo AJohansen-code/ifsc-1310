@@ -10,7 +10,7 @@ body {
 /* Navigation */
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 10px 2%;
     background: #2d5a27; /* Dark Forest Green */
@@ -19,11 +19,10 @@ nav {
 
 /* Specific styling for the logo link/container */
 .logo-link {
-    margin: 0;
-    padding: 0;
     text-decoration: none;
     display: flex; /* Ensures image and any potential text align */
     align-items: center;
+    margin-right: 15px;
 }
 
 /* Sizing the logo image */
@@ -43,6 +42,8 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
