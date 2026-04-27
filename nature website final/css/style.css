@@ -22,7 +22,7 @@ nav {
     text-decoration: none;
     display: flex; /* Ensures image and any potential text align */
     align-items: center;
-    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /* Sizing the logo image */
