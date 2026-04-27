@@ -12,13 +12,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 5%;
+    padding: 10px 2%;
     background: #2d5a27; /* Dark Forest Green */
     color: white;
 }
 
 /* Specific styling for the logo link/container */
 .logo-link {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     display: flex; /* Ensures image and any potential text align */
     align-items: center;
@@ -26,7 +28,7 @@ nav {
 
 /* Sizing the logo image */
 .site-logo {
-    height: 60px; /* Adjust height as needed to fit your header */
+    height: 70px; /* Adjust height as needed to fit your header */
     width: auto;
 }
 
