@@ -17,6 +17,19 @@ nav {
     color: white;
 }
 
+/* Specific styling for the logo link/container */
+.logo-link {
+    text-decoration: none;
+    display: flex; /* Ensures image and any potential text align */
+    align-items: center;
+}
+
+/* Sizing the logo image */
+.site-logo {
+    height: 60px; /* Adjust height as needed to fit your header */
+    width: auto;
+}
+
 .nav-btn {
     background: white;
     color: #333 !important;
