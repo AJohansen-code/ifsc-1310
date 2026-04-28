@@ -85,26 +85,13 @@ nav ul li a {
 
 /* Scavenger Banner */
 .scavenger-banner {
-    background-color: #e8f0e5;
-    padding: 20px;
-    margin: 40px 0;
-    text-align: center;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-}
-
-.scavenger-banner a {
+    background-color: #d8e2d1;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    text-decoration: none;
-    color: inherit;
-}
-
-.scavenger-banner img {
-    height: 60px; /* Keep the banner slim */
-    border-radius: 50%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 /* Info Grid Adjustments */
