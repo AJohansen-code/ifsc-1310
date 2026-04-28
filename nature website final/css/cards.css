@@ -95,6 +95,121 @@ nav ul li a {
     border-top: 1px solid #eee;
 }
 
+/*Donation Page*/
+.donation-container {
+    padding: 60px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.donation-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.donation-intro h1 {
+    color: #2d5a27; /* Dark Forest Green from your nav */
+    font-size: 2.5rem;
+}
+
+.donation-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+}
+
+.donation-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.amount-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.amt-btn {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #2d5a27;
+    background: white;
+    color: #2d5a27;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.amt-btn.active, .amt-btn:hover {
+    background: #2d5a27;
+    color: white;
+}
+
+.custom-amount {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-donation {
+    width: 100%;
+    margin-top: 10px;
+    background: #f1c40f; /* Yellow from your CTA button */
+}
+
+/* Other Ways to Help Styles */
+.help-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.help-item .icon {
+    font-size: 2rem;
+}
+
+.help-item h4 {
+    margin: 0 0 5px 0;
+    color: #2d5a27;
+}
+
+.help-item p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .donation-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Guide Page Specifics */
 .guide-content {
     max-width: 800px; /* Limits width for better readability */
