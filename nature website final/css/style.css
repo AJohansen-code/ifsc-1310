@@ -73,15 +73,7 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-.cta-button {
-    background: #f1c40f;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-}
+
 
 /* Scavenger Banner */
 .scavenger-banner {
