@@ -61,16 +61,11 @@ nav ul li a {
 .hero {
     background: #4a7c44; /* Leaf Green */
     background-image: url('images/homepage/nature.jpeg'); 
-  background-size: cover;
+    background-size: cover;
     background-position: center;
-    min-height: 500px; /* Gives it a consistent height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: white;
+    padding: 100px 5%;
     text-align: center;
-    padding: 0 5%;
 }
 
 .hero h1 {
