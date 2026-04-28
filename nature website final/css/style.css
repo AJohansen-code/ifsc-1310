@@ -96,18 +96,23 @@ nav ul li a {
 
 /* Info Grid Adjustments */
 .info-grid {
-    background-color: var(--off-white);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    /* This creates exactly 3 columns of equal width */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; /* Spacing between the boxes */
     padding: 40px 10%;
+    background-color: #f4f7f4; /* Matches your body background */
+    justify-items: center; /* Centers the cards within the grid tracks */
 }
 
 .card {
-    background: #e0e0e0; /* Gray boxes from prototype */
-    padding: 0;
+    background: #e0e0e0; /* Gray boxes from your prototype */
+    width: 100%; /* Ensures they fill the 1fr column width */
+    max-width: 350px; /* Prevents them from getting too wide on huge screens */
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px; /* Optional: adds a slight neatness to the corners */
     overflow: hidden;
-    border-top: none;
 }
 
 .card img {
