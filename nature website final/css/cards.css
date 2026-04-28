@@ -157,6 +157,140 @@ nav ul li a {
     text-align: center;
 }
 
+/* Volunteer Page Specific Main Styling */
+.volunteer-main {
+    padding: 40px 10%;
+    background-color: #ffffff; /* Overriding body bg for a clean white content area */
+}
+
+/* Volunteer Hero Section */
+.volunteer-hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.volunteer-hero-content .hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero-text-block h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.2;
+}
+
+.hero-text-block p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* How You Can Help Section */
+.how-you-can-help {
+    margin-bottom: 60px;
+}
+
+.how-you-can-help h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.how-you-can-help > p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.help-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.help-grid ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.help-grid ul li {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.help-grid ul li::before {
+    content: "•";
+    color: #2d5a27; /* Dark Forest Green from nav */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
+
+.help-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Become a Park Ranger Section (Next Level) */
+.next-level-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.next-level-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.next-level-text h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.next-level-text p {
+    margin-bottom: 20px;
+}
+
+.next-level-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.next-level-text ul li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.next-level-text ul li::before {
+    content: "•";
+    color: #2d5a27;
+    position: absolute;
+    left: 0;
+}
+
 /* Footer Layout */
 .main-footer {
     display: grid;
