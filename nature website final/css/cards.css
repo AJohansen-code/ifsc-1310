@@ -180,6 +180,172 @@ nav ul li a {
     background: #f1c40f; /* Yellow from your CTA button */
 }
 
+/* Main Page Container */
+.hiking-tips-main {
+    padding: 0 0 60px 0; /* Removing main padding for hero sections, added to individual content */
+    background-color: #ffffff;
+}
+
+/* Hiking Tips Hero Section */
+.hiking-hero {
+    margin-bottom: 60px;
+}
+
+.hiking-hero-content {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hiking-hero-content .hero-image {
+    width: 100%;
+    height: 350px; /* Adjust height based on your original header size */
+    object-fit: cover;
+    display: block;
+}
+
+.hiking-hero-content .hero-text-block {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    max-width: 60%;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Good for text readability over images */
+}
+
+.hiking-hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Base style for content sections */
+.hiking-intro,
+.trail-recommendations,
+.safety-essentials {
+    padding: 0 10%;
+    margin-bottom: 60px;
+}
+
+/* Intro Section Layout */
+.intro-content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.intro-text h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.intro-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Trail Recommendations Section Layout */
+.recommendations-content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.rec-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.rec-text h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.rec-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rec-text ul li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.rec-text ul li::before {
+    content: "•";
+    color: #2d5a27; /* Dark Forest Green from your nav */
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Safety Essentials Section Layout */
+.separator {
+    border: none;
+    border-top: 2px solid #ddd;
+    margin-bottom: 40px;
+}
+
+.safety-content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.safety-text h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.safety-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.safety-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.safety-text ul li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 1rem;
+}
+
+.safety-text ul li::before {
+    content: "•";
+    color: #2d5a27;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.safety-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
 /* Other Ways to Help Styles */
 .help-item {
     display: flex;
