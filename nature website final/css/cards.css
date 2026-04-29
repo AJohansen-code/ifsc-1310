@@ -211,7 +211,7 @@ nav ul li a {
     transform: translateY(-50%);
     color: #ffffff;
     max-width: 60%;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Good for text readability over images */
+    text-shadow: 0 2px 4px rgba(250, 246, 246, 0.5); /* Good for text readability over images */
 }
 
 .hiking-hero-content h1 {
