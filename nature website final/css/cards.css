@@ -218,6 +218,7 @@ nav ul li a {
     font-size: 3rem;
     font-weight: bold;
     margin: 0;
+    color: #ddd;
 }
 
 /* Base style for content sections */
@@ -240,7 +241,7 @@ nav ul li a {
     font-size: 2rem;
     margin-top: 0;
     margin-bottom: 15px;
-    color: #ffffff;
+    color: #020202;
 }
 
 .intro-image {
@@ -267,7 +268,7 @@ nav ul li a {
 
 .rec-text h3 {
     font-size: 1.8rem;
-    color: #fff7f7;
+    color: #070000;
     margin-top: 0;
     margin-bottom: 20px;
 }
@@ -528,7 +529,7 @@ nav ul li a {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Become a Park Ranger Section (Next Level) */
+/* Become a Park Ranger Section */
 .next-level-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
