@@ -13,21 +13,20 @@ nav {
     justify-content: flex-start !important;
     align-items: center;
     padding: 10px 2%;
-    background: #2d5a27; /* Dark Forest Green */
+    background: #2d5a27;
     color: white;
 }
 
-/* Specific styling for the logo link/container */
 .logo-link {
     text-decoration: none;
-    display: flex; /* Ensures image and any potential text align */
+    display: flex; 
     align-items: center;
     margin-right: 20px;
 }
 
 /* Sizing the logo image */
 .site-logo {
-    height: 70px; /* Adjust height as needed to fit your header */
+    height: 70px; 
     width: auto;
 }
 
@@ -59,7 +58,7 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    background: #4a7c44; /* Leaf Green */
+    background: #4a7c44; 
     background-image: url('images/homepage nature.jpeg');
     background-size: cover;
     background-position: center;
@@ -96,7 +95,7 @@ nav ul li a {
 }
 
 .card {
-    background: #e0e0e0; /* Gray boxes from prototype */
+    background: #e0e0e0; 
     padding: 0;
     overflow: hidden;
     border-top: none;
