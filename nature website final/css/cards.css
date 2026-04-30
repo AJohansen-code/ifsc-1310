@@ -209,7 +209,7 @@ nav ul li a {
     top: 50%;
     left: 5%;
     transform: translateY(-50%);
-    color: #ffffff;
+    color: #fdf5e5;
     max-width: 60%;
     text-shadow: 0 2px 4px rgb(252, 252, 252); 
 }
