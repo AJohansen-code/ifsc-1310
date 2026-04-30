@@ -182,7 +182,7 @@ nav ul li a {
 
 /* Main Page Container */
 .hiking-tips-main {
-    padding: 0 0 60px 0; /* Removing main padding for hero sections, added to individual content */
+    padding: 0 0 60px 0; 
     background-color: #ffffff;
 }
 
