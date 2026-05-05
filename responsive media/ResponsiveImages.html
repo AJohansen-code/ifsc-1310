@@ -9,13 +9,17 @@
                 max-width: 100%;
                 height: auto;
                 display: block;
+                border-radius: 8px;
         }
       </style>
 </head>
 <body>
+        <h1>Responsive Images: Beans the Puppy!</h1>
  <picture>
-        <source media="(min-width: 1000px)" srcset="beanie-puppy-large.jpg">
-        <source media="(max-width: 600px)" srcset="beanie-puppy-small.jpg> 
+        <source media="(min-width: 1500px)" srcset="beanie-puppy-large.jpg>
+        <source media="(min-width: 1000px)" srcset="beanie-puppy-medium.jpg">
+        <source media="(max-width: 500px)" srcset="beanie-puppy-small.jpg> 
+        
       <img src="beanie-puppy.jpg" alt="what my bulldog puppy looks like playing">
  </picture>    
 </body>
