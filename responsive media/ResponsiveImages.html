@@ -4,8 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reposive Images</title>
-
-         <style> 
+        <style> 
         img {
                 max-width: 100%;
                 height: auto;
@@ -16,12 +15,10 @@
 <body>
  <picture>
       <img src="beanie-puppy.jpg"
-         srcset="beanie-puppy-small.jpg 500w,
-                beanie-puppy-medium.jpg 1000w,
-                beanie-puppy-large.jpg 1500w"
-        
-        sizes="(max-width: 600px) 90vw, 800px"
-
+         srcset="beanie-puppy.jpg 1500w, 
+                 beanie-puppy.jpg 1000w, 
+                 beanie-puppy.jpg 500w"
+         sizes="(max-width: 600px) 90vw, 800px"
         alt="Cloes picture of my puppy bulldog name beans, she is now two and weights 70lbs!">
  </picture>    
 </body>
