@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <style>
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-</style>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Creating Responsive Images</title>
+        <title>Document</title>
 </head>
 <body>
-        <img src="Matt-and-Dino.JPG" 
-     srcset="Matt-and-Dino.JPG 500w, 
-             Matt-and-Dino-1000.JPG 1000w, 
-             Matt-and-Dino-1500.JPG 1500w" 
-     sizes="(max-width: 600px) 480px, 
-            800px" 
-     alt="My husband hanging out with his dinosaur friend.">
+      <style> 
+        img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+        }
+      </style>
+
+      <img src="beanie-puppy.jpg"
+         srcset="beanie-puppy-small.jpg 500w,
+                beanie-puppy-medium.jpg 1000w,
+                beanie-puppy-large.jpg 1500w"
+        
+        sizes="(max-width: 600px) 90vw, 800px"
+
+        alt="Cloes picture of my puppy bulldog name beans, she is now two and weights 70lbs!">
+        
 </body>
 </html>
