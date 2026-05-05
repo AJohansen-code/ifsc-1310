@@ -76,7 +76,7 @@ nav ul li a {
 
 /* Scavenger Banner */
 .scavenger-banner {
-    background-color: #4a7c44;
+    background-color: #d8e2d1;
     transition: backgound-color 0.3s ease, transform 0.2s ease;
     cursor: pointer;
 }
