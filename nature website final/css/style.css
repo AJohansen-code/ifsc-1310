@@ -63,7 +63,7 @@ nav ul li a {
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 5%;
+    padding: 150px 5%;
     text-align: center;
 }
 
@@ -72,6 +72,11 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
 
 
 /* Scavenger Banner */
@@ -88,7 +93,7 @@ nav ul li a {
 
 /* Info Grid Adjustments */
 .info-grid {
-    background-color: var(--off-white);
+    background-color: #f4f7f4;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
