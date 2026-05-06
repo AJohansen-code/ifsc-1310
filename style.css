@@ -1,9 +1,17 @@
+:root {
+    --bg-color: #f4f7f6;
+    --primary-color: #2c3e50;
+    --accent-color: #c42525;
+    --link-color: #830d0d;
+    --card-bg: white;
+}
+
 /* 1. Basic Reset & Font */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f4f7f6;
-    color: #333;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -13,8 +21,8 @@ body {
 
 /* 2. Styling the Name (Title) */
 h1 {
-    color: #2c3e50;
-    border-bottom: 2px solid #c42525;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
     padding-bottom: 10px;
     margin-bottom: 30px;
 }
@@ -29,7 +37,7 @@ ul {
 
 /* 4. Main List Items */
 li {
-    background: white;
+    background: var(--bg-color);
     margin: 10px 0;
     padding: 15px;
     border-radius: 8px;
@@ -44,24 +52,40 @@ li:hover {
 /* 5. Nested List (The Grid Lab section) */
 ul ul {
     margin-top: 10px;
-    border-left: 3px solid #e71f1f;
+    border-left: 3px solid var(--accent-color);
     padding-left: 20px;
 }
 
 ul ul li {
     box-shadow: none;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--bg-color);
     padding: 8px 0;
 }
 
 /* 6. Link Styling */
 a {
     text-decoration: none;
-    color: #830d0d;
+    color: var(--link-color);
     font-weight: bold;
 }
 
 a:hover {
-    color: #ca1616;
+    color: var(--accent-color);
     text-decoration: underline;
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 480px) {
+    body {
+        padding: 20px 10px; 
+    }
+    
+    h1 {
+        font-size: 1.5rem; 
+        text-align: center;
+    }
+
+    ul {
+        width: 95%; 
+    }
 }
